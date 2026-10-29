@@ -1,13 +1,13 @@
-package gr.ekpa.week1;
+package gr.ekpa.citizens.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Week1Application {
+public class CitizensServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Week1Application.class, args);
+		SpringApplication.run(CitizensServiceApplication.class, args);
 	}
 
 }

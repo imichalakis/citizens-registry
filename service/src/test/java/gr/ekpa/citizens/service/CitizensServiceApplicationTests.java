@@ -1,10 +1,10 @@
-package gr.ekpa.week1;
+package gr.ekpa.citizens.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Week1ApplicationTests {
+class CitizensServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
