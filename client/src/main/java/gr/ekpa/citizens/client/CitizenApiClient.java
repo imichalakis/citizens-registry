@@ -21,10 +21,9 @@ public class CitizenApiClient {
 	private final RestClient restClient;
 	private final ObjectMapper objectMapper;
 
-	public CitizenApiClient(RestClient.Builder restClientBuilder,
-			ObjectMapper objectMapper,
-			@Value("${citizens.service.url}") String serviceUrl) {
-		this.restClient = restClientBuilder.baseUrl(serviceUrl).build();
+	public CitizenApiClient(ObjectMapper objectMapper,
+			@Value("${citizens.service.url}") String baseUrl) {
+		this.restClient = RestClient.builder().baseUrl(baseUrl).build();
 		this.objectMapper = objectMapper;
 	}
 
